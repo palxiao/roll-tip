@@ -1,0 +1,41 @@
+.roll-bar {
+  top: 4rem;
+  left: .6rem;
+  position: fixed;
+  z-index: 999;
+  background: #2b2b2b;
+  opacity: 0.8;
+  font-size: 14px;
+  padding: .3rem;
+  border-radius: 5px;
+  animation: slowlyShow 1s;
+  -webkit-animation: slowlyShow 1s;
+}
+.roll-text {
+  color: #ffffff;
+  line-height: 24px;
+}
+.roll-text > img {
+  display: block;
+  float: left;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: .3rem;
+}
+@keyframes slowlyShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes slowlyShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}

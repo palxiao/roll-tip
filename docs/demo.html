@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RollTip</title>
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="../roll-tip.css" />
+  <script src="../roll-tip.min.js"></script>
+</head>
+<body>
+  <!-- 原始网页 -->
+  <style>
+  .box{    
+      display: flex;    
+      text-align: center;
+  }
+  .box span{
+      margin: auto;
+  }
+  </style>
+
+  <div class="box">
+    <span>测试网页 -  移动端</span>
+  </div>
+
+  <!-- 自定义动态内容 -->
+  <span id="roll-tip">会员
+    <span id="roll-main" style="font-size:13px"></span>
+    <span id="roll-time"></span>分钟前
+    <span id="roll-type"></span>
+  </span>
+  
+</body>
+<script>
+  var type = ['拼单成功','正在拼单','给出好评']
+
+  var rollTip = new rollTip({
+    el: document.getElementById('roll-tip'),
+    custom: ['', 20, type], // 对应内容展示值
+    headImg: 'temp.jpg',
+    maxSpeed: 10, // 设定10秒钟内的任意数值为显示间隔
+    // minSpeed: 5 // 设定显示间隔下限，默认间隔3秒出现且不低于3秒
+  })
+</script>
+</html>
