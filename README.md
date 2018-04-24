@@ -1,7 +1,7 @@
 # 网页随机动态提示消息弹出插件
 
 #### 项目介绍
-a simple random dynamic prompt tip/message.
+http://blog.palxp.com/roll-tip/demo.html
 
 #### 软件架构
 JavaScript Html Css3
